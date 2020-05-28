@@ -33,7 +33,6 @@ div div{
 	margin: 1.5%;
 	padding: 5% 1% 1% 1%;
 	position: relative;
-	transition-duration: 0.5s
 }
 
 div div h2{
@@ -42,6 +41,7 @@ div div h2{
 
 div div:hover{
 	background-color: #b8b894;
+	transition-duration: 0.5s
 	transform: scale(1.07, 1.05);
 }
 
