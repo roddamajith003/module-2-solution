@@ -1,0 +1,133 @@
+/*basic styles:*/
+
+/*h1 style*/
+h1{
+	text-align: center;
+	margin: 1%;
+	padding: 1%;
+	font-size: 250%;
+}
+
+h1:first-letter{
+	font-size: 200%;
+}
+
+/*styling the body*/
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	padding: 1%;
+	margin: 1%;
+}
+
+/*basic styling and hover effect of divs*/
+div{
+	position: relative;
+}
+
+div div{
+	background-color: #e0e0d1;
+	border: 1px solid black;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 30%;
+	margin: 1.5%;
+	padding: 5% 1% 1% 1%;
+	position: relative;
+	transition-duration: 0.5s
+}
+
+div div h2{
+	border: 1px solid black;
+}
+
+div div:hover{
+	background-color: #b8b894;
+	transform: scale(1.07, 1.05);
+}
+
+/*Styling the section Titles:*/
+.Chicken{
+	background-color: #ff4d4d;
+	text-align: center;
+}
+
+.Beef{
+	background-color: #ffbf80;
+	text-align: center;
+}
+
+.Sushi{
+	background-color: #df9f9f;
+	text-align: center;
+}
+
+/*for large devices only:*/
+@media (min-width: 992px) {
+	
+	div div h2{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		padding: 1% 5% 1%;
+		width: 30%;
+		margin: 0;
+	}
+	
+	div div{
+		height: 100%;
+		padding-top: 4%;
+	}
+
+}
+
+/*for medium sized devices only*/
+@media (min-width: 768px) and (max-width: 991px){
+
+	div div h2{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		padding: 1% 4% 1%;
+		width: 30%;
+		margin: 0;
+
+	}
+
+	div div {
+		width: 46%;
+	}
+
+	div div:nth-child(3){
+		display: block;
+		width: 96%;
+		height: auto;
+	}
+	div .Sushi {
+		width: 10%;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%
+	}
+
+}
+
+/*for small devices only*/
+@media (max-width: 767px){
+	div div{
+		display: inline-block;
+		width: 94%;
+		padding-top: 10%;
+		margin: 3%; ;
+	}
+
+	div div h2{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		padding: 1% 4% 1%;
+		width: 25%;
+		margin: 0;
+	}
+	div{
+		margin: 0 auto;
+	}
+}
